@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-image: url(../262D0E3F524D89BB09.jpeg);
+    width: 100%;
+}
+#home {
+    width: 100%;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 300px;
+}
+#aboutme {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+#image img{
+    width: 450px;
+    height: 450px;
+}
+#box {
+    width: 450px;
+    height: 450px;
+    background-color: #0050BC;
+    color: white;
+    position: relative;
+    right: 60px;
+    top: 30px;
+}
+#boxtext {
+    margin-top: 40px;
+    margin-left: 40px;
+}
