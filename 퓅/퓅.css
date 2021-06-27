@@ -10,6 +10,7 @@ body {
     text-align: center;
     margin-top: 250px;
     margin-bottom: 300px;
+    font-family: 'Roboto Mono', monospace;
 }
 #aboutme {
     width: 100%;
@@ -33,4 +34,5 @@ body {
 #boxtext {
     margin-top: 40px;
     margin-left: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
