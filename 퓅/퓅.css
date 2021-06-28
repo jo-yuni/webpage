@@ -1,14 +1,14 @@
 body {
     margin: 0;
-    background-image: url(../262D0E3F524D89BB09.jpeg);
     width: 100%;
+    background-image: url(../262D0E3F524D89BB09.jpeg);
 }
 #home {
     width: 100%;
     color: white;
     font-size: 150px;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 220px;
     margin-bottom: 300px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -35,4 +35,11 @@ body {
     margin-top: 40px;
     margin-left: 40px;
     font-family: 'Noto Sans KR', sans-serif;
+}
+#boximage {
+    margin-left: 150px;
+}
+#boximage img{
+    width: 250px;
+    height: 250px;
 }
