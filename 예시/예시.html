@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: red;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+
+    <script>
+        var users = [
+  {
+    name: "강희종",
+    age: 12,
+    img: "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+  },
+  {
+    name: "강희종1",
+    age: 15,
+    img: "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+  },
+  {
+    name: "강희종2",
+    age: 13,
+    img: "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+  }
+]
+
+for (var i in users) {
+  var student = users[i];
+  document.getElementById("container").innerHTML += `
+    <div class="box">
+      <h1>학생 정보</h1>
+      <img src="${student.img}" />
+      ${student.name} ${student.age}
+    </div>
+  `;
+}
+    </script>
+</body>
+</html>

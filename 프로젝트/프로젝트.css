@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: url(../262D0E3F524D89BB09.jpeg);
-    width: 100%;
+    width: 100vw;
 }
 #main {
     color: white;
@@ -31,7 +31,7 @@ body {
 }
 .content {
     margin-top: 600px;
-    width: 100%;
+    width: 100vw;
 }
 #content1 {
     margin-left: 750px;
@@ -100,48 +100,67 @@ body {
 #content7:hover img {
     transform: scale(1.1);
 }
-
 .add {
     display: flex;
-    flex-direction: column;
+    z-index: 10;
     display: none;
-    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .showanimation {
     display: flex;
-    animation-name: slidein;
+    animation-name: slideup;
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
-@keyframes slidein {
+@keyframes slideup {
     from {
-        margin-top: 100%;
+        transform: translateY(50%);
         width: 100%;
     }
     to {
-        margin-top: 0%;
+        transform: none;
         width: 100%;
     }
-}
-#arrow {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
 }
 #addbox {
     width: 100vw;
     height: 100vh;
     background-color: #0050BC;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: relative;
 }
+#arrow {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    cursor: pointer;
+}
+.closeanimation {
+    display: flex;
+    animation-name: slidedown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes slidedown {
+    from {
+        transform: none;
+        width: 100%;
+    }
+    to {
+        transform: translateY(100%);
+        width: 100%;
+    }
+}
 #addimage {
     position: absolute;
-    top: 50px;
+    top: 190px;
+    left: 50px;
 }
 #addimage img {
     width: 650px;
@@ -152,7 +171,11 @@ body {
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     position: absolute;
-    top: 550px;
+    top: 190px;
+    right: 350px;
+}
+#addimagetext {
+    color: white;
 }
 .hidden {
     display: none;
