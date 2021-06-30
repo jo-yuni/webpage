@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #0050BC;
+    width: 60px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+.btn-open {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.addheader {
+    width: 500px;
+    height: 100vh;
+    display: none;
+}
+
+.openanimation {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(0%);
+        width: 100%;
+    }
+    to {
+        transform: translateX(40%);
+        width: 100%;
+    }
+}
