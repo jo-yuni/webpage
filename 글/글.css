@@ -47,8 +47,9 @@ body {
     top: 70px;
 }
 
-a {
+.menu a {
     text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .spread-underline {
@@ -153,7 +154,7 @@ i {
     margin-top: 40px;
 }
 
-a {
+#add a {
     color: white;
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;

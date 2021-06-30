@@ -43,12 +43,15 @@ document.querySelector('.arrow1').addEventListener('click', function() {
     document.getElementsByClassName('add1')[0].classList.add('closeanimation')
     setTimeout(function() {
         document.getElementsByClassName('add1')[0].classList.add('hidden')
-    }, 600);
+    }, 1000);
 })
 
 document.querySelector('.arrow2').addEventListener('click', function() {
     document.getElementsByClassName('add2')[0].classList.remove('showanimation')
     document.getElementsByClassName('add2')[0].classList.add('closeanimation')
+    setTimeout(function() {
+        document.getElementsByClassName('add2')[0].classList.add('hidden')
+    }, 1000);
 })
 
 // $(function() {
