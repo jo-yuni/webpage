@@ -1,28 +1,38 @@
+document.getElementsByClassName('btn-open')[0].addEventListener('click', function() {
+    document.getElementsByClassName('addheader')[0].classList.toggle('show')
+})
+
 document.getElementById('content1').addEventListener('click', function() {
     document.getElementsByClassName('add1')[0].classList.add('showanimation')
     document.getElementsByClassName('add1')[0].classList.remove('closeanimation')
     document.getElementsByClassName('add1')[0].classList.remove('hidden')
 })
+
 document.getElementById('content2').addEventListener('click', function() {
     document.getElementsByClassName('add2')[0].classList.add('showanimation')
     document.getElementsByClassName('add2')[0].classList.remove('closeanimation')
 })
+
 document.getElementById('content3').addEventListener('click', function() {
     document.getElementsByClassName('add3')[0].classList.add('showanimation')
     document.getElementsByClassName('add3')[0].classList.remove('closeanimation')
 })
+
 document.getElementById('content4').addEventListener('click', function() {
     document.getElementsByClassName('add')[0].classList.add('showanimation')
     document.getElementsByClassName('add')[0].classList.remove('closeanimation')
 })
+
 document.getElementById('content5').addEventListener('click', function() {
     document.getElementsByClassName('add')[0].classList.add('showanimation')
     document.getElementsByClassName('add')[0].classList.remove('closeanimation')
 })
+
 document.getElementById('content6').addEventListener('click', function() {
     document.getElementsByClassName('add')[0].classList.add('showanimation')
     document.getElementsByClassName('add')[0].classList.remove('closeanimation')
 })
+
 document.getElementById('content7').addEventListener('click', function() {
     document.getElementsByClassName('add')[0].classList.add('showanimation')
     document.getElementsByClassName('add')[0].classList.remove('closeanimation')
@@ -35,6 +45,7 @@ document.querySelector('.arrow1').addEventListener('click', function() {
         document.getElementsByClassName('add1')[0].classList.add('hidden')
     }, 600);
 })
+
 document.querySelector('.arrow2').addEventListener('click', function() {
     document.getElementsByClassName('add2')[0].classList.remove('showanimation')
     document.getElementsByClassName('add2')[0].classList.add('closeanimation')
