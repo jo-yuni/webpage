@@ -100,8 +100,7 @@ body {
 #content7:hover img {
     transform: scale(1.1);
 }
-.add {
-    display: flex;
+.add1, .add2, .add3, .add4, .add5, .add6, .add7 {
     z-index: 10;
     display: none;
     position: fixed;
@@ -124,7 +123,7 @@ body {
         width: 100%;
     }
 }
-#addbox {
+.addbox {
     width: 100vw;
     height: 100vh;
     background-color: #0050BC;
@@ -133,7 +132,7 @@ body {
     justify-content: center;
     position: relative;
 }
-#arrow {
+.arrow1, .arrow2, .arrow3, .arrow4, .arrow5, .arrow6, .arrow7 {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -157,25 +156,23 @@ body {
         width: 100%;
     }
 }
-#addimage {
+.addimage {
     position: absolute;
-    top: 190px;
-    left: 50px;
+    left: 30px;
 }
-#addimage img {
+.addimage img {
     width: 650px;
     height: 450px;
 }
-#addtext {
+.addtext {
     color: white;
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     position: absolute;
-    top: 190px;
-    right: 350px;
+    right: 30px;
 }
-#addimagetext {
-    color: white;
+.bigtext {
+    font-size: 30px;
 }
 .hidden {
     display: none;

@@ -51,12 +51,14 @@ i {
 #title {
     font-size: 30px;
     margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #titlecontent {
     overflow-y: auto; 
     overflow-x: hidden; 
     width: 100%; 
     height: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #add {
     margin-top: 40px;
@@ -64,4 +66,5 @@ i {
 a {
     color: white;
     text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
