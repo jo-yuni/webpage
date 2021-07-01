@@ -166,6 +166,16 @@ a {
     z-index: 1;
 }
 
+#boxline1 {
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    position: relative;
+    z-index: 1;
+}
+
 #image img{
     width: 350px;
     height: 250px;
