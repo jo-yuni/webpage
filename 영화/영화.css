@@ -124,15 +124,15 @@ body {
 .boxtext {
     position: relative;
     top: 60px;
-    width: 630px;
-    height: 630px;
+    width: 600px;
+    height: 600px;
     color: white;
     background-color: #0050BC;
 }
 
 #text {
     position: relative;
-    top: 55px;
+    top: 40px;
     left: 20px;
 }
 

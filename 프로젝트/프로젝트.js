@@ -11,11 +11,13 @@ document.getElementById('content1').addEventListener('click', function() {
 document.getElementById('content2').addEventListener('click', function() {
     document.getElementsByClassName('add2')[0].classList.add('showanimation')
     document.getElementsByClassName('add2')[0].classList.remove('closeanimation')
+    document.getElementsByClassName('add2')[0].classList.remove('hidden')
 })
 
 document.getElementById('content3').addEventListener('click', function() {
     document.getElementsByClassName('add3')[0].classList.add('showanimation')
     document.getElementsByClassName('add3')[0].classList.remove('closeanimation')
+    document.getElementsByClassName('add3')[0].classList.remove('hidden')
 })
 
 document.getElementById('content4').addEventListener('click', function() {
@@ -38,6 +40,39 @@ document.getElementById('content7').addEventListener('click', function() {
     document.getElementsByClassName('add')[0].classList.remove('closeanimation')
 })
 
+// slideIndex는 1이다. showDivs는 1을 가지고 있다.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+// 만약 prev 버튼을 누른다면 n은 -1.
+// prev 버튼을 눌렀을 때, showDivs는 0을 가지고 있다.
+// 만약 next 버튼을 누른다면 n은 +1.
+// next 버튼을 눌렀을 때, showdivs는 2를 가지고 있다.
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+// i라는 변수가 있고 changeimage라는 클래스네임을 가진 객체를 가지는 변수 x가 있다.
+// showDivs가 0을 가지고 있을 때, slideIndex는 19이다.
+// i는 0이고 19보다 작으며 1씩 커진다. x의 원소들은 display를 none으로 한다.
+// x의 18번째의 display를 blok으로 한다.
+
+// i라는 변수가 있고 changeimage라는 클래스네임을 가진 객체를 가지는 변수 x가 있다.
+// showDivs가 2를 가지고 있을 때, slideIndex는 여전히 1이다.
+// i는 0이고 19보다 작으며 1씩 커진다. x의 원소들은 display를 none으로 한다.
+// x의 0번째의 display를 blok으로 한다.
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("changeimage");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
 document.querySelector('.arrow1').addEventListener('click', function() {
     document.getElementsByClassName('add1')[0].classList.remove('showanimation')
     document.getElementsByClassName('add1')[0].classList.add('closeanimation')
@@ -53,6 +88,20 @@ document.querySelector('.arrow2').addEventListener('click', function() {
         document.getElementsByClassName('add2')[0].classList.add('hidden')
     }, 1000);
 })
+
+document.querySelector('.arrow3').addEventListener('click', function() {
+    document.getElementsByClassName('add3')[0].classList.remove('showanimation')
+    document.getElementsByClassName('add3')[0].classList.add('closeanimation')
+    setTimeout(function() {
+        document.getElementsByClassName('add3')[0].classList.add('hidden')
+    }, 1000);
+})
+
+// document.querySelector('.arrow').addEventListener('click', function() {
+//     setTimeout(function() {
+//         document.getElementsByClassName('add2')[0].classList.add('hidden')
+//     }, 1000);
+// })
 
 // $(function() {
 //     $(".arrow").on("click", function() {
