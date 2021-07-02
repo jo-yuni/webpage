@@ -247,10 +247,10 @@ a {
 
 .arrow1, .arrow2, .arrow3, .arrow4, .arrow5, .arrow6, .arrow7 {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     top: 10px;
-    left: 700px;
+    left: 710px;
     cursor: pointer;
 }
 
@@ -279,20 +279,15 @@ a {
 .addcontent {
     display: flex;
     align-items: center;
-    margin-top: 35px;
-}
-
-.album {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 10px;
+    position: relative;
+    top: 30px;
 }
 
 .addimage {
     width: 650px;
     height: 450px;
-    overflow-x: hidden;
+    position: absolute;
+    left: 35px;
 }
 
 .addimage img {
@@ -300,28 +295,15 @@ a {
     height: 450px;
 }
 
-.prev {
-    margin-right: 10px;
-}
-
-.next {
-    margin-left: 10px;
-}
-
-button {
-    color: white;
-    background-color: #0050BC;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-}
-
 .addtext {
     color: white;
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     position: absolute;
-    right: 15px;
+    right: 35px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 600px;
 }
 
 .bigtext {
