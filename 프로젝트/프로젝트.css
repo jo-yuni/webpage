@@ -28,7 +28,7 @@ body {
 .addheader {
     width: 500px;
     height: 100vh;
-    background-color: #0050BC;
+    background-color: #6DA0FD;
     display: flex;
     justify-content: center;
     display: none;
@@ -104,7 +104,7 @@ a {
 #line {
     border-style: solid;
     border-width: 1px;
-    border-color: #0050BC;
+    border-color: #6DA0FD;
     margin-top: 40px;
     margin-left: 550px;
     margin-right: 550px;
@@ -113,67 +113,103 @@ a {
 .content {
     margin-top: 600px;
     width: 100vw;
+    height: 4000px;
 }
 
 #content1 {
-    margin-left: 750px;
+    position: absolute;
+    right: 300px;
     cursor: pointer;
 }
 
 #content2 {
-    margin-left: 100px;
+    position: absolute;
+    top: 1300px;
+    left: 200px;
     cursor: pointer;
 }
 
 #content3 {
-    margin-left: 950px;
+    position: absolute;
+    top: 1750px;
+    left: 600px;
     cursor: pointer;
 }
 
 #content4 {
-    margin-left: 650px;
+    position: absolute;
+    top: 2200px;
+    left: 0px;
     cursor: pointer;
 }
 
 #content5 {
-    margin-left: 80px;
+    position: absolute;
+    top: 2650px;
+    left: 900px;
     cursor: pointer;
 }
 
 #content6 {
-    margin-left: 600px;
+    position: absolute;
+    top: 3100px;
+    left: 100px;
     cursor: pointer;
 }
 
 #content7 {
-    margin-left: 950px;
+    position: absolute;
+    top: 3550px;
+    right: 100px;
+    cursor: pointer;
+}
+
+#content8 {
+    position: absolute;
+    top: 4000px;
+    right: 500px;
+    cursor: pointer;
+}
+
+#content9 {
+    position: absolute;
+    top: 4450px;
+    left: 100px;
     cursor: pointer;
 }
 
 #image {
     position: relative;
-    top: -226px;
-    right: 25px;
 }
 
-#boxline {
-    width: 300px;
-    height: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    position: relative;
+#boxline1, #boxline2, #boxline3, #boxline4, #boxline5, #boxline6, #boxline7, #boxline8, #boxline9 {
+    display: none;
+    width: 350px;
+    height: 250px;
+    background-color: #0050BC;
+    opacity: 90%;
+    position: absolute;
     z-index: 1;
 }
 
-#boxline1 {
-    width: 300px;
-    height: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    position: relative;
-    z-index: 1;
+.boxlinetext {
+    color: white;
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 83px;
+}
+
+.boxlinetext1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 110px;
 }
 
 #image img{
@@ -181,32 +217,40 @@ a {
     height: 250px;
 }
 
-#content1:hover img {
-    transform: scale(1.1);
+#content1:hover > #boxline1 {
+    display: flex;
 }
 
-#content2:hover img {
-    transform: scale(1.1);
+#content2:hover > #boxline2 {
+    display: flex;
 }
 
-#content3:hover img {
-    transform: scale(1.1);
+#content3:hover > #boxline3 {
+    display: flex;
 }
 
-#content4:hover img {
-    transform: scale(1.1);
+#content4:hover > #boxline4 {
+    display: flex;
 }
 
-#content5:hover img {
-    transform: scale(1.1);
+#content5:hover > #boxline5 {
+    display: flex;
 }
 
-#content6:hover img {
-    transform: scale(1.1);
+#content6:hover > #boxline6 {
+    display: flex;
 }
 
-#content7:hover img {
-    transform: scale(1.1);
+#content7:hover > #boxline7 {
+    display: flex;
+}
+
+#content8:hover > #boxline8 {
+    display: flex;
+}
+
+#content9:hover > #boxline9 {
+    display: flex;
 }
 
 .add1, .add2, .add3, .add4, .add5, .add6, .add7 {

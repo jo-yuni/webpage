@@ -2,6 +2,10 @@ document.getElementsByClassName('btn-open')[0].addEventListener('click', functio
     document.getElementsByClassName('addheader')[0].classList.toggle('show')
 })
 
+// document.getElementById('content1').addEventListener('mouseover', function() {
+//     document.getElementById('boxline').classList.add('boxlineanimation')
+// })
+
 document.getElementById('content1').addEventListener('click', function() {
     document.getElementsByClassName('add1')[0].classList.add('showanimation')
     document.getElementsByClassName('add1')[0].classList.remove('closeanimation')
