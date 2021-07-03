@@ -28,7 +28,6 @@ document.getElementById('content4').addEventListener('click', function() {
     document.getElementsByClassName('add4')[0].classList.add('showanimation')
     document.getElementsByClassName('add4')[0].classList.remove('closeanimation')
     document.getElementsByClassName('add4')[0].classList.remove('hidden')
-
 })
 
 document.getElementById('content5').addEventListener('click', function() {

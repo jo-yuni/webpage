@@ -111,8 +111,13 @@ body {
     margin-top: 600px;
 }
 
-.box1, .box2, .box3 {
+.box1, .box2 {
     margin-bottom: 300px;
+    display: flex;
+}
+
+.box3 {
+    margin-bottom: 200px;
     display: flex;
 }
 
@@ -152,6 +157,4 @@ img {
 a {
     text-decoration: none;
     color: white;
-    /* position: relative;
-    top: 350px; */
 }

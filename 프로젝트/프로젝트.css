@@ -113,7 +113,7 @@ a {
 .content {
     margin-top: 600px;
     width: 100vw;
-    height: 4000px;
+    height: 3100px;
 }
 
 #content1 {
@@ -139,7 +139,7 @@ a {
 #content4 {
     position: absolute;
     top: 2200px;
-    left: 0px;
+    left: 50px;
     cursor: pointer;
 }
 
