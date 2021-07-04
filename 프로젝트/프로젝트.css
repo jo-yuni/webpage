@@ -361,3 +361,22 @@ a {
     height: 600px;
 }
 
+@media (max-width: 960px) {
+    .addheader {
+        width: 300px;
+        height: 100vh;
+    }
+
+    #content1 {
+        right: -100px;
+    }
+
+    #content5 {
+        left: 700px;
+    }
+
+    #content7 {
+        right: -10px;
+    }
+}
+

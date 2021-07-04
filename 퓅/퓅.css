@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    width: 100%;
+    width: 100vw;
     background-image: url(../image/262D0E3F524D89BB09.jpeg);
 }
 
@@ -85,8 +85,8 @@ a {
     color: white;
     font-size: 150px;
     text-align: center;
-    margin-top: 220px;
-    margin-bottom: 300px;
+    margin-top: 230px;
+    margin-bottom: 320px;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -94,7 +94,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 190px;
 }
 
 #image img{
@@ -122,7 +122,48 @@ a {
     margin-left: 150px;
 }
 
-#boximage img{
+#boximage img {
     width: 250px;
     height: 250px;
+}
+
+@media (max-width: 960px) {
+    #home {
+        font-size: 130px;
+        position: relative;
+        left: 55px;
+    }
+
+    #aboutme {
+        position: relative;
+        left: 55px;
+    }
+
+    #image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    #box {
+        width: 400px;
+        height: 400px;
+    }
+
+    #boxtext {
+        font-size: 15px;
+    }
+
+    #boximage {
+        margin-left: 200px;
+    }
+
+    #boximage img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .addheader {
+        width: 300px;
+        height: 100vh;
+    }
 }
