@@ -159,6 +159,17 @@ a {
     color: white;
 }
 
-a:hover {
-    color: #6DA0FD;
+#contents a {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#contents a:hover {
+    background-color: white;
+    color: #0050BC;
 }
