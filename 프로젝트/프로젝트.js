@@ -34,7 +34,6 @@ document.getElementById('content5').addEventListener('click', function() {
     document.getElementsByClassName('add5')[0].classList.add('showanimation')
     document.getElementsByClassName('add5')[0].classList.remove('closeanimation')
     document.getElementsByClassName('add5')[0].classList.remove('hidden')
-
 })
 
 document.getElementById('content6').addEventListener('click', function() {
@@ -111,7 +110,7 @@ document.querySelector('.arrow7').addEventListener('click', function() {
 //     setTimeout(function() {
 //         document.getElementsByClassName('add2')[0].classList.add('hidden')
 //     }, 1000);
-// })
+// });
 
 // $(function() {
 //     $(".arrow").on("click", function() {
