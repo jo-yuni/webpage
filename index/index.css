@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    width: 100vw;
+    background-image: url(../image/262D0E3F524D89BB09.jpeg);
+}
+
+#home {
+    width: 100%;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+    font-family: 'Roboto Mono', monospace;
+}
