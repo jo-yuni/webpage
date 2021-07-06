@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-image: url(../image/262D0E3F524D89BB09.jpeg);
     width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -70,7 +71,7 @@ a {
     color: white;
     text-align: center;
     position: relative;
-    top: 260px;
+    top: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -150,7 +151,7 @@ a {
     cursor: pointer;
 }
 
-#content8 {
+/* #content8 {
     position: absolute;
     top: 4000px;
     right: 500px;
@@ -162,6 +163,43 @@ a {
     top: 4450px;
     left: 100px;
     cursor: pointer;
+} */
+
+body {
+    margin: 0;
+}
+
+.putter {
+    width: 100%;
+    height: 50px;
+    background-color: #6DA0FD;
+    position: relative;
+    top: -16px;
+}
+
+.mmenu {
+    display: flex;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 50px;
+}
+
+.email {
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.icon {
+    display: flex;
+    margin-left: 900px;
+}
+
+.icon1 {
+    margin-right: 20px;
+}
+
+i {
+    color: white;
 }
 
 #image {
