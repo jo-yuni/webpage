@@ -385,6 +385,16 @@ i {
     height: 600px;
 }
 
+.more {
+    position: relative;
+    top: 250px;
+    left: 570px;
+}
+
+.more a {
+    color: white;
+}
+
 @media (max-width: 960px) {
     .addheader {
         width: 300px;

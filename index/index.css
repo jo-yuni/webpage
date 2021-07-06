@@ -28,13 +28,18 @@ body {
     grid-template-columns: 250px 250px 250px 250px;
     column-gap: 100px;
     justify-content: center;
-    /* align-content: center; */
+    align-content: center;
 }
 
 .box {
     border-style: solid;
     border-color: white;
     border-width: 1px;
+    overflow: hidden;
+}
+
+a img:hover {
+    transform: scale(1.2);
 }
 
 a img {
@@ -46,6 +51,26 @@ a img {
     color: white;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
-    text-align: center;
     margin-top: 20px;
+    display: flex;
+}
+
+.text1 {
+    position: relative;
+    left: 145px;
+}
+
+.text2 {
+    position: relative;
+    left: 410px;
+}
+
+.text3 {
+    position: relative;
+    left: 685px;
+}
+
+.text4 {
+    position: relative;
+    left: 965px;
 }
