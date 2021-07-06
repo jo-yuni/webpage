@@ -13,27 +13,28 @@ header {
     z-index: 2;
 }
 
-.headerimage {
+header a {
     position: relative;
     top: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.headerimage img{
+header a img{
     width: 80px;
     height: 80px;
 }
 
 .menu {
     position: relative;
-    top: 25px;
+    top: 18px;
     left: 310px;
     display: flex;
     width: 800px;
     justify-content: space-between;
 }
 
-a {
+.menu a {
     text-decoration: none;
     font-size: 17px;
     font-family: 'Roboto Mono', monospace;
@@ -65,11 +66,42 @@ a {
     left: 0%;
 }
 
+#main {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#toptext {
+    font-size: 38px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#undertext {
+    font-size: 130px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#line {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6DA0FD;
+    margin-top: 40px;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
 #aboutme {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 190px;
+    margin-top: 600px;
+    margin-bottom: 150px;
 }
 
 #image img{
@@ -163,7 +195,7 @@ a {
         left: 40px;
     }
 
-    a {
+    .menu a {
         font-size: 13px;
     }
 

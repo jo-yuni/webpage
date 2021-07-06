@@ -13,20 +13,21 @@ header {
     z-index: 2;
 }
 
-.headerimage {
+header a {
     position: relative;
     top: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.headerimage img{
+header a img{
     width: 80px;
     height: 80px;
 }
 
 .menu {
     position: relative;
-    top: 25px;
+    top: 18px;
     left: 310px;
     display: flex;
     width: 800px;
