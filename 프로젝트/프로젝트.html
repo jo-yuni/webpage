@@ -20,7 +20,7 @@
             <img src="../image/마법사-removebg-preview.png">
         </div>
         <div class="menu">
-            <a href="../index.html"><span class="spread-underline">About me</span></a>
+            <a href="../index.html"><span class="spread-underline">Main</span></a>
             <a href="../프로젝트/프로젝트.html"><span class="spread-underline">Project</span></a>
             <a href="../영화/영화.html"><span class="spread-underline">Movie</span></a>
             <a href="../글/글.html"><span class="spread-underline">Writing</span></a>
@@ -664,6 +664,29 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+    <script>
+
+        const images = gsap.utils.toArray('#image');
+
+        images.forEach(image => {
+            gsap.fromTo(image, {
+                opacity: '0',
+            }, {
+                opacity: '1',
+                scrollTrigger: {
+                    trigger: image,
+                    // markers: true,
+                    scrub: true,
+                    toggleActions: "restart none none reverse",
+                    start: "top 90%",
+                    end: "top center"
+                }
+            })
+        });
+    </script>
     <script type="text/javascript" src="./프로젝트.js"></script>
 </body>
 

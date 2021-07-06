@@ -4,6 +4,7 @@ header {
     background-color: #6DA0FD;
     width: 100%;
     height: 200px;
+    z-index: 2;
 }
 
 .headerimage {

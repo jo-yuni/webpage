@@ -33,11 +33,6 @@ header {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Roboto Mono', monospace;
-}
 
 .spread-underline {
     color: white;
@@ -114,20 +109,45 @@ a {
     margin-right: 90px;
 }
 
+/* button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+button i {
+    margin-right: 10px;
+} */
+
 .boxtext {
     position: relative;
-    top: 60px;
+    top: 50px;
     width: 600px;
     height: 600px;
     color: white;
     background-color: #0050BC;
 }
 
-#text {
+.text {
     position: relative;
     top: 40px;
     left: 20px;
+    /* display: none; */
 }
+
+/* .textanimation {
+    display: block;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
 
 #title {
     font-size: 25px;
@@ -145,6 +165,8 @@ img {
 a {
     text-decoration: none;
     color: white;
+    font-size: 17px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #contents a {
@@ -155,6 +177,7 @@ a {
     border-width: 1px;
     border-radius: 20px;
     padding: 10px;
+    font-size: 15px;
 }
 
 #contents a:hover {

@@ -1,6 +1,6 @@
-document.getElementsByClassName('btn-open')[0].addEventListener('click', function() {
-    document.getElementsByClassName('addheader')[0].classList.toggle('show')
-})
+// document.getElementsByClassName('btn-open')[0].addEventListener('click', function() {
+//     document.getElementsByClassName('addheader')[0].classList.toggle('show')
+// })
 
 // document.getElementById('content1').addEventListener('mouseover', function() {
 //     document.getElementById('boxline').classList.add('boxlineanimation')
