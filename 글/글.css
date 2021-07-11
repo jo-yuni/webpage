@@ -164,7 +164,7 @@ body {
     height: 50px;
     background-color: #6DA0FD;
     position: relative;
-    top: 110px;
+    top: 100px;
 }
 
 .mmenu {
@@ -181,10 +181,14 @@ body {
 
 .icon {
     display: flex;
-    margin-left: 900px;
+    margin-left: 1020px;
 }
 
 .icon1 {
+    margin-right: 20px;
+}
+
+.icon2 {
     margin-right: 20px;
 }
 
