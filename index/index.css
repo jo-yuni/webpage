@@ -15,6 +15,14 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+.info {
+    margin-top: 350px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
 .background {
     margin-top: 250px;
     width: 100%;

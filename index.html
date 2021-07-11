@@ -21,6 +21,20 @@
         World
     </div>
 
+    <div class="info">
+        <p>
+            안녕하세요, Wigarding World에 오신 것을 환영합니다.
+            <br>
+            아래 4가지 문 중 아무 문이나 열고 들어가주세요.
+            <br>
+            '알로호모라'라는 주문을 입으로 꼭 외치셔야 합니다.
+            <br>
+            외치지 않으시면.. 저도 장담하지 못 할 일이 벌어질 겁니다.
+            <br>
+            그럼 좋은 하루 되세요! 펑! (순간이동)
+        </p>
+    </div>
+
     <div class="background">
         <div class="boxes">
             <div class="box">
@@ -59,6 +73,40 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+    <script>
+
+        gsap.fromTo(".info", {
+            opacity: '0',
+        }, {
+            opacity: '1',
+            scrollTrigger: {
+                trigger: '.info',
+                scrub: 2,
+                markers: true,
+                toggleActions: "restart none none reverse",
+                start: "top 80%",
+                end: "top 30%"
+            }
+        })
+
+        gsap.fromTo(".background", {
+            opacity: '0',
+        }, {
+            opacity: '1',
+            scrollTrigger: {
+                trigger: '.background',
+                scrub: 2,
+                markers: true,
+                toggleActions: "restart none none reverse",
+                start: "top 80%",
+                end: "top 30%"
+            }
+        })
+    </script>
 
     <script type="text/javascript" src="./index/index.js"></script>
 </body>
