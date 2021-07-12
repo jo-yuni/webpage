@@ -161,10 +161,14 @@ body {
 
 .icon {
     display: flex;
-    margin-left: 900px;
+    margin-left: 1020px;
 }
 
 .icon1 {
+    margin-right: 20px;
+}
+
+.icon2 {
     margin-right: 20px;
 }
 
